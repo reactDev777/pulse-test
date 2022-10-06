@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary
+  }
+
+  html {
+    --tv-color-pane-background: #121318 !important
+  }
+}
+
+@layer components {
+  .custom-shadow {
+    box-shadow: -1px -1px 0px #FFFFFF;
+  }
+}
+
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+}
+
+.loading-indicator {
+  background-color: transparent;
+}
+
+.ant-select-selector {
+  background: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+  /* border: none !important; */
+  /* padding: 0.5rem !important;
+  height: 2.7rem !important; */
+}
